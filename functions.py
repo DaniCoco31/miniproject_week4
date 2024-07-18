@@ -28,15 +28,18 @@ def query_to_dataframe(connection, query):
     results = execute_query(connection, query)
     return pd.DataFrame(results)
 
-
-
 ##### VISUALIZATION
 # Visualization functions
+#def visualize_num_sets_per_theme(df, x, y, tittle):
 def visualize_num_sets_per_theme(df):
     plt.figure(figsize=(12, 8))
-    sns.barplot(x='Number of sets', y='Theme', data=df)
+    plot = sns.barplot(x='Number of sets', y='Theme', data=df)
+    for index, row in df.iterrows():
+        plot.text(row['Number of sets'], index, round(row['Number of sets'], 2), 
+                  color='black', ha="center", va="center")
     plt.title('Number of Sets per Theme')
     plt.show()
+
 
 def visualize_top_sets_with_most_parts(df):
     plt.figure(figsize=(12, 8))
