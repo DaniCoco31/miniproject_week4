@@ -17,6 +17,8 @@
 ### Hypothesis 1: Number of Sets per Theme
 This hypothesis examines which themes have the most sets. Understanding the popularity of themes can guide marketing efforts, product development, and inventory management. It helps identify which themes resonate most with customers.
 
+![Cuadro_1](https://github.com/DaniCoco31/miniproject_week4/blob/main/Visualizations/imagen.png)
+
 
 ### Hypothesis 2: Top 10 Sets with the Most Parts
 Identifying the sets with the most parts highlights the most complex and potentially premium products. This information is valuable for pricing strategy, targeting advanced builders, and creating detailed marketing content.
