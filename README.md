@@ -1,6 +1,6 @@
 ## Project Description: Analyzing LEGO Sets Data for Business Insights
 ### Introduction
-#### This project involves the analysis of LEGO sets data to uncover trends and insights that can inform business strategies and decisions. By leveraging data from the [LEGO database]([https://pages.github.com/](https://www.kaggle.com/datasets/rtatman/lego-database/data)), we aim to explore various aspects of LEGO sets, including the distribution of sets across themes, the complexity of sets in terms of the number of parts, and historical trends in set design. This analysis will help in understanding market preferences, identifying popular themes, and observing how LEGO set designs have evolved over time.
+#### This project involves the analysis of LEGO sets data to uncover trends and insights that can inform business strategies and decisions. By leveraging data from the [LEGO database](https://www.kaggle.com/datasets/rtatman/lego-database/data), we aim to explore various aspects of LEGO sets, including the distribution of sets across themes, the complexity of sets in terms of the number of parts, and historical trends in set design. This analysis will help in understanding market preferences, identifying popular themes, and observing how LEGO set designs have evolved over time.
 
 ## LEGO database consisting of the following tables:
 
