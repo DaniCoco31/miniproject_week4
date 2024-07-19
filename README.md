@@ -28,7 +28,7 @@ Identifying the sets with the most parts highlights the most complex and potenti
 ##### Analysis:  The Taj Mahal leads with 5922 parts, followed by the Star Wars / M&M Mosaic (5461 parts) and Window Exploration Bag (5200 parts), showcasing the most complex and premium sets. These high-piece sets cater to advanced builders and are ideal for targeted marketing campaigns and strategic pricing, emphasizing their intricacy and value.
 
 
-### Identify the top 10 sets with the most parts to understand the most complex and detailed sets.
+### Identify the top 10 themes with the most parts to understand the most complex and detailed sets.
 This analysis reveals which themes contribute most to LEGO's total parts inventory. It helps in understanding the complexity and investment in different themes, assisting in resource allocation and product line management.
 
 ![Cuadro 4](https://github.com/DaniCoco31/miniproject_week4/blob/main/Visualizations/Themes_with_the_Most_Parts.png)
