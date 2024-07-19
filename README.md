@@ -3,7 +3,6 @@
 #### This project involves the analysis of LEGO sets data to uncover trends and insights that can inform business strategies and decisions. By leveraging data from the [LEGO database](https://www.kaggle.com/datasets/rtatman/lego-database/data), we aim to explore various aspects of LEGO sets, including the distribution of sets across themes, the complexity of sets in terms of the number of parts, and historical trends in set design. To analyze the LEGO inventory data to gain insights into the characteristics of LEGO sets, themes, and their evolution over time. The analysis aims to support decision-making processes related to inventory management, product development, and marketing strategies.
 
 ## LEGO database consisting of the following tables:
-
 - colors
 - inventories
 - inventory_parts
@@ -31,7 +30,7 @@ Identifying the sets with the most parts highlights the most complex and potenti
 ### Identify the top 10 themes with the most parts to understand the most complex and detailed sets.
 This analysis reveals which themes contribute most to LEGO's total parts inventory. It helps in understanding the complexity and investment in different themes, assisting in resource allocation and product line management.
 
-![Cuadro 4](https://github.com/DaniCoco31/miniproject_week4/blob/main/Visualizations/Themes_with_the_Most_Parts.png)
+![Cuadro 3](https://github.com/DaniCoco31/miniproject_week4/blob/main/Visualizations/Top_10_Sets_with_the_Most_Parts.png)
 
 ##### Analysis: Basic Set leads with 199,262 parts, followed by Star Wars Episode 4/5/6 (166,978 parts) and Construction (99,943 parts). These themes dominate LEGO's total parts inventory, highlighting their complexity and significant resource allocation, crucial for managing product lines and investment strategies.
 
