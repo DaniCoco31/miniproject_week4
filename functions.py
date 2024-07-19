@@ -107,27 +107,6 @@ def visualize_top_sets_with_most_parts(df):
     plt.ylabel('Set Name')
     plt.show()
 
-# visualize top sets with least parts
-"""
-Creates a bar chart visualizing the top sets (potentially by a specified number) 
-with the least parts in a pandas DataFrame.
-
-Args:
-    df (pandas.DataFrame): The DataFrame containing data on sets and their 
-        corresponding number of parts. The DataFrame should have columns named 
-        'name' and 'num_parts'.
-"""
-def visualize_top_sets_with_least_parts(df):
-    plt.figure(figsize=(12, 8))
-    plot = sns.barplot(x='num_parts', y='name', data=df)
-    for index, row in df.iterrows():
-        plot.text(row['num_parts'], index, row['num_parts'], 
-                  color='black', ha="center", va="center")
-    plt.title('Top 10 Sets with the Least Parts')
-    plt.xlabel('Number of Parts')
-    plt.ylabel('Set Name')
-    plt.show()
-
 # visualize themes with most parts
 """
 Creates a bar chart visualizing themes with the most parts in a pandas DataFrame.
@@ -143,21 +122,6 @@ def visualize_themes_with_most_parts(df):
     plt.title('Themes with the Most Parts')
     plt.show()
 
-# visualize quantity of pieces in oldest sets
-"""
-Creates a bar chart visualizing the quantity (number) of parts for each set 
-in a pandas DataFrame.
-
-Args:
-    df (pandas.DataFrame): The DataFrame containing data on sets and their 
-        corresponding number of parts. The DataFrame should have columns named 
-        'name' and 'num_parts'.
-"""
-def visualize_quantity_of_pieces_in_oldest_sets(df):
-    plt.figure(figsize=(12, 8))
-    sns.barplot(x='num_parts', y='name', data=df)
-    plt.title('Quantity of Pieces in the Oldest Sets')
-    plt.show()
 
 # visualize changes in quantity of pieces
 """
@@ -180,3 +144,116 @@ def visualize_changes_in_quantity_of_pieces(df):
     plt.title('Changes in the Quantity of Pieces in LEGO Sets from 1950 to 2017')
     plt.show()
 
+def visualize_oldest_sets(connection, queries):
+    """Executes a query to get the oldest LEGO sets and visualizes their piece count.
+
+    Args:
+        connection: The established database connection.
+        queries (dict): A dictionary containing the SQL queries.
+    """
+
+    query = queries['quantity_of_pieces_in_oldest_sets']  # Retrieve the query from the dictionary
+    df_oldest_sets = query_to_dataframe(connection, query)
+
+    # Determine the minimum year (oldest sets)
+    min_year = df_oldest_sets['year'].min()
+
+    # --- Visualization ---
+
+    plt.figure(figsize=(12, 8))
+    sns.barplot(data=df_oldest_sets, x='num_parts', y='name')
+    plt.title(f'Number of Pieces in the Oldest LEGO Sets ({min_year})', fontsize=16)
+    plt.xlabel('Number of Parts', fontsize=14)
+    plt.ylabel('Set Name')
+
+    # Add value labels to the bars
+    for index, value in enumerate(df_oldest_sets['num_parts']):
+        plt.text(value, index, str(value), color='black', va='center', ha='left')
+
+    plt.show()
+
+def visualize_year_variation(connection, queries):
+    """
+    Executes a query to get the variation of parts over time and visualizes it using a scatter plot with a trend line.
+    
+    Parameters:
+    connection (sqlalchemy.engine.Engine): The SQLAlchemy engine connected to the database.
+    queries (dict): A dictionary containing SQL queries.
+    """
+    
+    query = queries['variation_num_part_over_year']
+    df_parts_variation = query_to_dataframe(connection, query)
+
+    # --- Visualization ---
+    plt.figure(figsize=(12, 8))
+
+    # Scatter plot with seaborn
+    sns.scatterplot(x='year', y='part_range', data=df_parts_variation, color='skyblue', s=100, edgecolor='black')
+
+    # Add labels and title (matching the example style)
+    plt.title('Variation in Number of Parts Over Time', fontsize=14)
+    plt.xlabel('Year', fontsize=12)
+    plt.ylabel('Range of Parts (Max - Min)', fontsize=12)
+    
+    # Optionally add a smoother line to show the trend
+    sns.regplot(x='year', y='part_range', data=df_parts_variation, scatter=False, color='darkblue', lowess=True)
+
+    plt.grid(True)
+    plt.tight_layout()
+    plt.show()
+
+
+def visualize_new_themes_per_year(connection, queries):
+    """Executes a query to get the number of new themes introduced each year
+      and visualizes it with a scatter plot and trend line."""
+
+    query_2 = queries['themes_introduced_each_year'] 
+    df_new_themes = query_to_dataframe(connection, query_2)
+
+    # --- Visualization ---
+    plt.figure(figsize=(12, 8))
+
+    # Scatter plot with Lego colors
+    plt.scatter(df_new_themes['year'], df_new_themes['new_themes'], s=100, alpha=0.7, label='New Themes')
+
+    # Trend line
+    sns.regplot(x='year', y='new_themes', data=df_new_themes, scatter=False, lowess=True, label='Trend')
+
+    # Add labels and title
+    plt.title('Number of New Themes Introduced Each Year', fontsize=14)
+    plt.xlabel('Year', fontsize=12)
+    plt.ylabel('Number of New Themes', fontsize=12)
+    plt.legend(title='Legend') 
+
+    # Show the plot
+    plt.tight_layout()
+    plt.show()
+
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+
+
+def visualize_most_common_colors(connection, queries):
+    """Executes a query to get the most common colors in LEGO sets and visualizes it."""
+
+    query = queries['most_common_color_in_sets']
+    df_color_counts = query_to_dataframe(connection, query)
+
+    # --- Visualization ---
+    plt.figure(figsize=(12, 8))
+
+    # Create a bar chart using Seaborn with Lego colors
+    sns.barplot(x='Color', y='count', data=df_color_counts)
+
+   
+
+    # Set title and labels
+    plt.title('Most Common Colors in LEGO Sets', fontsize=14)
+    plt.xlabel('Color', fontsize=12)
+    plt.ylabel('Count', fontsize=12)
+    plt.xticks(rotation=45) 
+
+    # Show the plot
+    plt.tight_layout()
+    plt.show()
