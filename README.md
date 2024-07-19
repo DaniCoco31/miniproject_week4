@@ -22,7 +22,7 @@
 ### Top 10 Sets with the Most Parts
 Identifying the sets with the most parts highlights the most complex and potentially premium products. This information is valuable for pricing strategy, targeting advanced builders, and creating detailed marketing content.
 
-![Cuadro 2](https://github.com/DaniCoco31/miniproject_week4/blob/main/Visualizations/Themes_with_the_Most_Parts.png)
+![Cuadro 2](https://github.com/DaniCoco31/miniproject_week4/blob/main/Visualizations/Top_10_Sets_with_the_Most_Parts.png)
 
 ##### Analysis:  The Taj Mahal leads with 5922 parts, followed by the Star Wars / M&M Mosaic (5461 parts) and Window Exploration Bag (5200 parts), showcasing the most complex and premium sets. These high-piece sets cater to advanced builders and are ideal for targeted marketing campaigns and strategic pricing, emphasizing their intricacy and value.
 
@@ -30,13 +30,7 @@ Identifying the sets with the most parts highlights the most complex and potenti
 ### Identify the top 10 themes with the most parts to understand the most complex and detailed sets.
 This analysis reveals which themes contribute most to LEGO's total parts inventory. It helps in understanding the complexity and investment in different themes, assisting in resource allocation and product line management.
 
-![Cuadro 3](https://github.com/DaniCoco31/miniproject_week4/blob/main/Visualizations/Top_10_Sets_with_the_Most_Parts.png)
-
-##### Analysis: Basic Set leads with 199,262 parts, followed by Star Wars Episode 4/5/6 (166,978 parts) and Construction (99,943 parts). These themes dominate LEGO's total parts inventory, highlighting their complexity and significant resource allocation, crucial for managing product lines and investment strategies.
-
-### Themes with the Most Parts: Determine the themes with the highest total number of parts to identify the themes with the most complex sets.
-
-![themes](https://github.com/DaniCoco31/miniproject_week4/blob/main/Visualizations/themes_with_most_parts.png)
+![Cuadro 3](https://github.com/DaniCoco31/miniproject_week4/blob/main/Visualizations/Themes_with_the_Most_Parts.png)
 
 ##### Analysis: Basic Set leads with 199,262 parts, followed by Star Wars Episode 4/5/6 (166,978 parts) and Construction (99,943 parts). These themes dominate LEGO's total parts inventory, highlighting their complexity and significant resource allocation, crucial for managing product lines and investment strategies.
 
