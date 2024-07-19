@@ -37,6 +37,8 @@ This analysis reveals which themes contribute most to LEGO's total parts invento
 
 ### Themes with the Most Parts: Determine the themes with the highest total number of parts to identify the themes with the most complex sets.
 
+![themes](https://github.com/DaniCoco31/miniproject_week4/blob/main/Visualizations/themes_with_most_parts.png)
+
 ##### Analysis: Basic Set leads with 199,262 parts, followed by Star Wars Episode 4/5/6 (166,978 parts) and Construction (99,943 parts). These themes dominate LEGO's total parts inventory, highlighting their complexity and significant resource allocation, crucial for managing product lines and investment strategies.
 
 ### Quantity of Pieces in the Oldest Sets: Analyze the number of pieces in the oldest sets to understand the complexity of the earliest LEGO sets. 
@@ -45,10 +47,9 @@ Investigating the oldest sets provides historical context and showcases the evol
 ![Cuadro 5](https://github.com/DaniCoco31/miniproject_week4/blob/main/Visualizations/Quantity_of_Pieces_in_the_Oldest_Sets.png)
 
 ##### Analysis: The oldest sets, like the Automatic Binding Bricks Small Brick Set from 1950 with 24 pieces, illustrate the humble beginnings of LEGO set design. These early sets, with few parts, provide valuable insights into the evolution of LEGO products and are ideal for nostalgic marketing and heritage storytelling.
-## Hypothesis and statements Descriptions and Relevance
 
 ### Changes in the Quantity of Pieces in LEGO Sets from 1950 until 2017 
-##### Hypothesis: The average number of pieces in LEGO sets has increased over time.
+##### Hypothesis 1: The average number of pieces in LEGO sets has increased over time.
 Analyzing how the average number of pieces in LEGO sets has changed over time can reveal trends in product complexity and consumer preferences. This can inform future product development and strategic planning.
 Conclusions and Business Applications
 
@@ -57,14 +58,14 @@ Conclusions and Business Applications
 ##### Analysis: The average number of pieces in LEGO sets has significantly increased from 10 pieces in 1950 to 265 pieces in 2017, indicating a trend towards more complex and intricate designs. This trend reflects evolving consumer preferences and can guide future product development and strategic planning to meet the demand for more detailed sets.
 
 ### Variation in Number of Parts Over Time
-##### Hypothesis: The variation in the number of parts in sets has increased over time, indicating a broader range of set complexities.
+##### Hypothesis 2: The variation in the number of parts in sets has increased over time, indicating a broader range of set complexities.
 
 ![Cuadro__](https://github.com/DaniCoco31/miniproject_week4/blob/main/Visualizations/variation_num_part_over_year.png)
 
 ##### Analysis: Overall, the graph illustrates a clear evolution in the LEGO product line, starting with relatively uniform sets and progressing towards a wide variety of sets with vastly different parts counts. This diversification likely reflects LEGO's adaptation to changing consumer preferences and the desire to appeal to a broader audience.
 
 ### Most Common Color in Sets
-##### Hypothesis: Certain colors are more commonly used in LEGO sets, reflecting popular design choices.
+##### Hypothesis 3: Certain colors are more commonly used in LEGO sets, reflecting popular design choices.
 ![Colors](https://github.com/DaniCoco31/miniproject_week4/blob/main/Visualizations/most_common_color_in_sets.png)
 
 ##### Analysis: The bar chart displays the 10 most common LEGO colors, with black being the most frequent and tan the least. White and light bluish gray are also used very frequently. The color distribution suggests a preference for basic and neutral colors in LEGO sets.
